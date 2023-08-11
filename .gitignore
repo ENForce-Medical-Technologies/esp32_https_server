@@ -10,7 +10,10 @@ local.properties
 .loadpath
 .recommenders
 Release/
-
+extras/.DS_Store
+extras/ci/.DS_Store
+examples/.DS_Store
+.DS_Store
 # External tool builders
 .externalToolBuilders/
 

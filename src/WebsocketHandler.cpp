@@ -16,15 +16,15 @@ static void dumpFrame(WebsocketFrame frame) {
     case WebsocketHandler::OPCODE_PONG: opcode = std::string("PONG"); break;
     case WebsocketHandler::OPCODE_TEXT: opcode = std::string("TEXT"); break;
   }
-  ESP_LOGI(
-    TAG,
-    "Fin: %d, OpCode: %d (%s), Mask: %d, Len: %d",
-    (int)frame.fin,
-    (int)frame.opCode,
-    opcode.c_str(),
-    (int)frame.mask,
-    (int)frame.len
-  );
+  // ESP_LOGI(
+  //   TAG,
+  //   "Fin: %d, OpCode: %d (%s), Mask: %d, Len: %d",
+  //   (int)frame.fin,
+  //   (int)frame.opCode,
+  //   opcode.c_str(),
+  //   (int)frame.mask,
+  //   (int)frame.len
+  // );
 }
 
 WebsocketHandler::WebsocketHandler() {
